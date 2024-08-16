@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import {ThemeProvider } from "next-themes";
+import { FloatingNavDemo } from "@/components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,8 +26,11 @@ export default function RootLayout({
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
+
           >
+             <FloatingNavDemo />
             {children}
+           <FloatingNavDemo/>
           </ThemeProvider>
 
       </body>

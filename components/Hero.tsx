@@ -1,34 +1,62 @@
 "use client";
-import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "../components/ui/hero-highlight";
 
-export function Hero() {
+import { FaLocationArrow } from "react-icons/fa6";
+import MagicButton from "./ui/MagicButtons";
+import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import AppStoreButton from "./AppStoreButton";
+
+
+const Hero = () => {
+  const handleClick = async () => {
+    window.open("https://app.getswipe.in/auth/login", "_blank");
+  };
+
   return (
-    <HeroHighlight>
-      <motion.h1
-        initial={{
-          opacity: 0,
-          y: 20,
-        }}
-        animate={{
-          opacity: 1,
-          y: [20, -5, 0],
-        }}
-        transition={{
-          duration: 0.5,
-          ease: [0.4, 0.0, 0.2, 1],
-        }}
-        className="text-sm max-h-full h-96 px-0 py-0 md:text-xl lg:text-1xl font-bold text-neutral-500 dark:text-white max-w-2xl leading-relaxed lg:leading-snug text-center mx-auto "
+    <div className="pt-12 py-20 pb-0 relative overflow-hidden">
+      <div>
+        <Spotlight
+          className="absolute -top-40 -left-10 md:-left-32 md:-top-20"
+          fill="white"
+        />
+        <Spotlight className="absolute top-10 left-full" fill="purple" />
+        <Spotlight className="absolute left-80 top-28" fill="blue" />
+      </div>
+
+      {/**
+       *  Updated background and grid styling to fit screen
+       */}
+      <div
+        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+       absolute top-0 left-0 flex items-center justify-center"
       >
-       Create your Invoices, Purchases & Quotations in less than 10 seconds.
-       <br/>
-       Share on WhatsApp with payment links and get paid faster!
-       {" "}
-       <br/>
-        <Highlight className="text-black dark:text-white">
-        Simple GST Billing, Invoiceing, Accounting, Payments
-        </Highlight>
-      </motion.h1>
-    </HeroHighlight>
+        {/* Radial gradient for the container to give a faded look */}
+        <div
+          // Changed background to blend with the container
+          className="absolute inset-0 pointer-events-none flex items-center justify-center dark:bg-black-100
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+        />
+      </div>
+
+      <div className="flex justify-center relative my-20 z-10">
+        <div className="max-w-full md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          <TextGenerateEffect
+            words="Create your Invoices, Purchases & Quotations in less than 10 seconds. Share on WhatsApp with payment links and get paid faster!"
+            className="text-center text-[40px] md:text-xl lg:text-xl"
+          />
+          <a href="#about">
+            <MagicButton
+              title="Sign Up For Free"
+              icon={<FaLocationArrow />}
+              position="right"
+              handleClick={handleClick}
+            />
+          </a>
+        </div>
+      </div>
+      <AppStoreButton />
+    </div>
   );
-}
+};
+
+export default Hero;
