@@ -1,10 +1,18 @@
 "use client";
 
+import { Footer } from "@/components/Footer";
+import { SwipeLogo } from "@/components/SwipeLogo";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 
 export function Pricing() {
+
     return (
+      <>
+      <div className="w-full h-none bg-black-100 ">
+
+      <SwipeLogo/>
+    </div>
       <div className="flex items-start h-5/6 justify-center space-x-3 bg-slate-800 dark:bg-black-100 pt-40 pb-20 ">
         <div className="flex justify-center items-center h-full ml-10">
           <CardSpotlight className=" w-85 pb-8">
@@ -114,6 +122,8 @@ export function Pricing() {
           </CardSpotlight>
         </div>
       </div>
+      <Footer/>
+      </>
     );
   }
   

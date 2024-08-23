@@ -7,6 +7,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 export function InvoiceFormats() {
   const cards = data.map((card, index) => (
+    //@ts-ignore
     <Card key={card.src} card={card} index={index} />
   ));
 

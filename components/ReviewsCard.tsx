@@ -15,7 +15,7 @@ export function ReviewsCard({
       <div
         className={cn(
           " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl  max-w-sm mx-auto backgroundImage flex flex-col justify-between p-4",
-          "bg-[url(https://media.istockphoto.com/id/962737798/photo/dark-blue-background.webp?b=1&s=612x612&w=0&k=20&c=aHkr7zmFtpTYcazng18fjl-bpKRm-xZz5Zrg5xYI-bs=)] bg-cover bg-center"
+          "bg-[url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.jpg?w=996&t=st=1724316514~exp=1724317114~hmac=6507f5cb3461b52091f83c9b6bd412c6b65ee14f51a5107f02c7154ea56b61f2)] bg-cover bg-center"
         )}
       >
         <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>

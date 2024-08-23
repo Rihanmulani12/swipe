@@ -20,9 +20,9 @@ const AppStoreButton = () => {
   }
   return (
 
-    <div className="relative bg-white dark:bg-black-100">
+    <div className="relative bg-white dark:bg-black-100 ">
 
-      <div className="flex justify-center py-12 ">
+      <div className="flex justify-center py-10 ">
         <Button onClick={handler} title="Google Play Store" className="mr-2" svgElement={<IoLogoGooglePlaystore />} />
         <Button onClick={handler2} title="Apple App Store" svgElement={<FaApple />} />
       </div>
@@ -32,15 +32,6 @@ const AppStoreButton = () => {
       </div>
 
     
-
-      <div className="flex justify-center py-12">
- 
-      
-     
-
-  
-        
-      </div>
 
       <div className="flex justify-center">
         <InvoiceFormats />

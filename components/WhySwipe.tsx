@@ -99,6 +99,7 @@ export function WhySwipe() {
             <Step
               key={index}
               title={feature}
+              // @ts-ignore
               className= "text-sm md:text-base px-2 py-1 border border-neutral-700 rounded-md hover:bg-neutral-800 transition duration-300"
             />
           ))}

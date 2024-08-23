@@ -1,4 +1,5 @@
 import React from 'react'
+import { SwipeLogo } from './SwipeLogo'
 
 export const  Footer =() => {
   return (
@@ -6,54 +7,49 @@ export const  Footer =() => {
     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" className="flex items-center">
-                  <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 me-3" alt="FlowBite Logo" />
-                  <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Swipe</span>
-                  
-              </a>
-              <p className='pt-2 text-sm text-gray-500'>Ab Business Karo, Tension Free!</p>
+            <div className='absolute'>
+              <SwipeLogo/>
+              </div>
+              <p className='pb-2 text-sm text-gray-500'>Ab Business Karo, Tension Free!</p>
           </div>
           <div className="grid grid-cols-4 gap-8 sm:gap-6 sm:grid-cols-4">
               <div>
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick Links</h2>
                   <ul className="flex flex-col justify-between space-y-4 text-gray-500 dark:text-gray-400 text-sm">
                       <li className="mb-4">
-                          <a href="https://flowbite.com/" className="hover:underline">why Swipe</a>
+                          <a href="/whySwipe" className="hover:underline">why Swipe</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:underline">E-Waybill</a>
+                          <a href="/eWaybill" className="hover:underline">E-Waybill</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:underline">Invoice Formats</a>
+                          <a href="/" className="hover:underline">Invoice Formats</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:underline">Swipe for Accountants</a>
+                          <a href="/" className="hover:underline">Swipe for Accountants</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:underline">FAQs</a>
+                          <a href="/" className="hover:underline">FAQs</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:underline">Tutorials</a>
+                          <a href="/" className="hover:underline">Tutorials</a>
                       </li>
                   </ul>
               </div>
               <div>
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Explore</h2>
                   <ul className="flex flex-col justify-between space-y-4 text-gray-500 dark:text-gray-400 text-sm">
-                      <li className="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Join Community</a>
+                      <li>
+                          <a href="/" className="hover:underline">Product Updates</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Product Updates</a>
+                          <a href="/" className="hover:underline">Tools</a>
                       </li>
                       <li>
-                          <a href="https://github.com/themesberg/flowbite/discussions" className="hover:underline">Tools</a>
+                          <a href="/" className="hover:underline">Exploar GST</a>
                       </li>
                       <li>
-                          <a href="https://github.com/themesberg/flowbite" className="hover:underline">Exploar GST</a>
-                      </li>
-                      <li>
-                          <a href="https://github.com/themesberg/flowbite" className="hover:underline">Tech</a>
+                          <a href="/" className="hover:underline">Tech</a>
                       </li>
                   </ul>
               </div>

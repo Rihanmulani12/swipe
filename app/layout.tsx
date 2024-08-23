@@ -4,6 +4,9 @@ import "./globals.css";
 
 import {ThemeProvider } from "next-themes";
 import { FloatingNavDemo } from "@/components/Nav";
+import { SwipeLogo } from "@/components/SwipeLogo";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,10 +30,14 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
 
-          >
+          >  
              <FloatingNavDemo />
+            
             {children}
+            
+           
            <FloatingNavDemo/>
+          
           </ThemeProvider>
 
       </body>

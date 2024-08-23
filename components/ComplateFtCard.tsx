@@ -4,10 +4,10 @@ import Button from './Button';
 import { IoLogoGooglePlaystore } from 'react-icons/io5';
 import Image from 'next/image';
 
+
 function ComplateFtCard() {
   return (
-
-    <div>
+<>
     <div>
       <Features 
         title="Create invoices in less than 10 seconds" 
@@ -71,7 +71,7 @@ function ComplateFtCard() {
         img={<Image src="/ft7.png" alt="Feature Image" width={300} height={200} />}
       />
     </div>
-    </div>
+    </>
    
     
   );
