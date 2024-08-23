@@ -37,6 +37,7 @@ const DummyContent = () => {
               alt="Macbook mockup from Aceternity UI"
               height="300"
               width="300"
+              fill
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
             />
           </div>
@@ -51,6 +52,8 @@ const data = [
    
   
     src: "https://getswipe.in/static/img/templates-new/temp-1.webp",
+    fill : true,
+    
     content: <DummyContent />,
   },
   {
